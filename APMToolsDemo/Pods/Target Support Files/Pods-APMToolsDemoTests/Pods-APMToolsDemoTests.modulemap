@@ -1,0 +1,6 @@
+framework module Pods_APMToolsDemoTests {
+  umbrella header "Pods-APMToolsDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
