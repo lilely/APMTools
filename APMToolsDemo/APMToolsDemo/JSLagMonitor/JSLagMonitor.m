@@ -69,6 +69,7 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
                     NSLog(@"Lag monitored!");
                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
                         //Call Stack
+                        NSLog(@"Report call stack:%@",[NSThread callStackSymbols]);
                     });
                 }
             }

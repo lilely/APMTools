@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JSCPUMonitor.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        while (YES) {
+            int a = 100*1000;
+        }
+    });
+    [JSCPUMonitor detectCPUUsage];
 }
 
 

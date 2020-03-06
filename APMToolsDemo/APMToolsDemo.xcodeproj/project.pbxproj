@@ -18,6 +18,7 @@
 		E28328262410913E00037B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28328252410913E00037B63 /* main.m */; };
 		E28328302410913E00037B63 /* APMToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E283282F2410913E00037B63 /* APMToolsDemoTests.m */; };
 		E283283D2410932800037B63 /* JSLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E283283C2410932800037B63 /* JSLagMonitor.m */; };
+		E28328412412963000037B63 /* JSCPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E28328402412963000037B63 /* JSCPUMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E28328312410913E00037B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E283283B2410932800037B63 /* JSLagMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSLagMonitor.h; sourceTree = "<group>"; };
 		E283283C2410932800037B63 /* JSLagMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSLagMonitor.m; sourceTree = "<group>"; };
+		E283283F2412963000037B63 /* JSCPUMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCPUMonitor.h; sourceTree = "<group>"; };
+		E28328402412963000037B63 /* JSCPUMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCPUMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				E283283B2410932800037B63 /* JSLagMonitor.h */,
 				E283283C2410932800037B63 /* JSLagMonitor.m */,
+				E283283F2412963000037B63 /* JSCPUMonitor.h */,
+				E28328402412963000037B63 /* JSCPUMonitor.m */,
 			);
 			path = JSLagMonitor;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			files = (
 				E283281B2410913B00037B63 /* ViewController.m in Sources */,
 				E28328152410913B00037B63 /* AppDelegate.m in Sources */,
+				E28328412412963000037B63 /* JSCPUMonitor.m in Sources */,
 				E283283D2410932800037B63 /* JSLagMonitor.m in Sources */,
 				E28328262410913E00037B63 /* main.m in Sources */,
 				E28328182410913B00037B63 /* SceneDelegate.m in Sources */,
