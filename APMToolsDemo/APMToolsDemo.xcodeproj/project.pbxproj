@@ -19,6 +19,8 @@
 		E28328302410913E00037B63 /* APMToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E283282F2410913E00037B63 /* APMToolsDemoTests.m */; };
 		E283283D2410932800037B63 /* JSLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E283283C2410932800037B63 /* JSLagMonitor.m */; };
 		E28328412412963000037B63 /* JSCPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E28328402412963000037B63 /* JSCPUMonitor.m */; };
+		E28332832413DBA100037B63 /* JSFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E28332822413DBA100037B63 /* JSFPSMonitor.m */; };
+		E28332862413E2AE00037B63 /* JSMemoryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E28332852413E2AE00037B63 /* JSMemoryMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		E283283C2410932800037B63 /* JSLagMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSLagMonitor.m; sourceTree = "<group>"; };
 		E283283F2412963000037B63 /* JSCPUMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCPUMonitor.h; sourceTree = "<group>"; };
 		E28328402412963000037B63 /* JSCPUMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCPUMonitor.m; sourceTree = "<group>"; };
+		E28332812413DBA100037B63 /* JSFPSMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFPSMonitor.h; sourceTree = "<group>"; };
+		E28332822413DBA100037B63 /* JSFPSMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSFPSMonitor.m; sourceTree = "<group>"; };
+		E28332842413E2AE00037B63 /* JSMemoryMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMemoryMonitor.h; sourceTree = "<group>"; };
+		E28332852413E2AE00037B63 /* JSMemoryMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMemoryMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 				E28328212410913E00037B63 /* LaunchScreen.storyboard */,
 				E28328242410913E00037B63 /* Info.plist */,
 				E28328252410913E00037B63 /* main.m */,
+				E28332802413DB8000037B63 /* MemoryMonitor */,
+				E283327E2413DB5200037B63 /* JSFPSMonitor */,
+				E283327F2413DB6700037B63 /* JSCPUMonitor */,
 				E283283A241092D200037B63 /* JSLagMonitor */,
 			);
 			path = APMToolsDemo;
@@ -152,10 +161,35 @@
 			children = (
 				E283283B2410932800037B63 /* JSLagMonitor.h */,
 				E283283C2410932800037B63 /* JSLagMonitor.m */,
+			);
+			path = JSLagMonitor;
+			sourceTree = "<group>";
+		};
+		E283327E2413DB5200037B63 /* JSFPSMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				E28332812413DBA100037B63 /* JSFPSMonitor.h */,
+				E28332822413DBA100037B63 /* JSFPSMonitor.m */,
+			);
+			path = JSFPSMonitor;
+			sourceTree = "<group>";
+		};
+		E283327F2413DB6700037B63 /* JSCPUMonitor */ = {
+			isa = PBXGroup;
+			children = (
 				E283283F2412963000037B63 /* JSCPUMonitor.h */,
 				E28328402412963000037B63 /* JSCPUMonitor.m */,
 			);
-			path = JSLagMonitor;
+			path = JSCPUMonitor;
+			sourceTree = "<group>";
+		};
+		E28332802413DB8000037B63 /* MemoryMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				E28332842413E2AE00037B63 /* JSMemoryMonitor.h */,
+				E28332852413E2AE00037B63 /* JSMemoryMonitor.m */,
+			);
+			path = MemoryMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +343,12 @@
 			files = (
 				E283281B2410913B00037B63 /* ViewController.m in Sources */,
 				E28328152410913B00037B63 /* AppDelegate.m in Sources */,
+				E28332862413E2AE00037B63 /* JSMemoryMonitor.m in Sources */,
 				E28328412412963000037B63 /* JSCPUMonitor.m in Sources */,
 				E283283D2410932800037B63 /* JSLagMonitor.m in Sources */,
 				E28328262410913E00037B63 /* main.m in Sources */,
 				E28328182410913B00037B63 /* SceneDelegate.m in Sources */,
+				E28332832413DBA100037B63 /* JSFPSMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

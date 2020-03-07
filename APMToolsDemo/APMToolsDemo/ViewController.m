@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "JSCPUMonitor.h"
+#import "JSFPSMonitor.h"
+#import "JSMemoryMonitor.h"
 
 @interface ViewController ()
 
@@ -17,13 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        while (YES) {
-            int a = 100*1000;
-        }
-    });
     [JSCPUMonitor detectCPUUsage];
+    [JSMemoryMonitor detectMemoryUsage];
+    //[JSFPSMonitor.sharedInstance startMonitor];
 }
 
 
